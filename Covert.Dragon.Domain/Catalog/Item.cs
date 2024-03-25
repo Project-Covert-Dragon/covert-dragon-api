@@ -11,6 +11,8 @@ namespace Covert.Dragon.Api.Domain.Catalog
         public string Description { get; set; }
         public string Brand { get; set; }
         public decimal Price { get; set; }
+        public List<Rating> Ratings { get; set; } = new List<Rating>();
+
 
         public Item(string name, string description, string brand, decimal price)
         {
@@ -36,6 +38,11 @@ namespace Covert.Dragon.Api.Domain.Catalog
             Description = description;
             Brand = brand;
             Price = price;
+        }
+
+        public void AddRating(Rating rating)
+        {
+            this.Ratings.Add(rating);
         }
     }
 }
