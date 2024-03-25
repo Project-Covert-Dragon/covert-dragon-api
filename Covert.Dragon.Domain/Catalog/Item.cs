@@ -1,19 +1,17 @@
 
 using System;
-using System.Collections.Generic; // Import List type
+using System.Collections.Generic;
 
 namespace Covert.Dragon.Api.Domain.Catalog
 {
     public class Item
     {
-        // Properties
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public string Brand { get; set; }
         public decimal Price { get; set; }
 
-        // Constructor
         public Item(string name, string description, string brand, decimal price)
         {
             if (string.IsNullOrEmpty(name))
