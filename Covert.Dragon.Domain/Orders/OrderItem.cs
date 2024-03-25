@@ -1,4 +1,4 @@
- using Covert.Dragon.Domain.Catalog;
+using Covert.Dragon.Domain.Catalog;
 namespace Covert.Dragon.Domain.Orders 
    { 
     public class OrderItem 
