@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Covert.Dragon.Api.Domain.Catalog
+namespace Covert.Dragon.Domain.Catalog
 {
     public class Item
     {

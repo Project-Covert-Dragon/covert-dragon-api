@@ -1,6 +1,6 @@
 using System.Collections.Generic; 
 using System.Linq;
-using Covert.Dragon.Domain.Orders;
+using Covert.Dragon.Domain.Catalog;
 
 namespace Covert.Dragon.Domain.Orders 
 { 
