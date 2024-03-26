@@ -1,7 +1,7 @@
 
-using Microsoft.AspNetCore.Mvc; 
-using Covert.Dragon.Domain;
+using Covert.Dragon.Domain.Catalog;
 using Covert.Dragon.Data;
+using Microsoft.AspNetCore.Mvc; 
 using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 
 namespace Covert.Dragon.Api.Controllers
