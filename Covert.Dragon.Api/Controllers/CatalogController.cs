@@ -1,11 +1,21 @@
 using Microsoft.AspNetCore.Mvc;
 using Covert.Dragon.Domain.Catalog;
+using Covert.Dragon.Data;
 
 namespace Covert.Dragon.Api.Controllers{
     [ApiController]
-    [Route("[controller]")]
+    [Route("/catalog")]
 
     public class CatalogController: ControllerBase {
+
+        private readonly StoreContext _db;
+
+        public CatalogController(StoreContext db)
+        {
+            _db = db;
+        }
+
+        /*
         [HttpGet]
         public IActionResult GetItems(){
 
@@ -17,6 +27,13 @@ namespace Covert.Dragon.Api.Controllers{
 
 
             return Ok(items);
+        }
+        */
+
+        [HttpGet]
+        public IActionResult GetItems(){
+
+            return Ok(_db.Items);
         }
 
         [HttpGet("{id:int}")]
