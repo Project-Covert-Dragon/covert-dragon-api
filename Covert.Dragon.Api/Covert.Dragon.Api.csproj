@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="../Covert.Dragon.Domain/Covert.Dragon.Domain.csproj" />
+    <ProjectReference Include="..\Covert.Dragon.Data\Covert.Dragon.Data.csproj" />
   </ItemGroup>
 
 </Project>
