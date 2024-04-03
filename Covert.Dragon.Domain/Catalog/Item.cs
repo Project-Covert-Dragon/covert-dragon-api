@@ -7,7 +7,7 @@ namespace Covert.Dragon.Domain.Catalog{
         public string? Description {get; set;}
         public string? Brand {get; set;}
         public decimal Price {get; set;}
-        public List<Rating> Ratings {get; set;}
+        public List<Rating>? Ratings {get; set;}
 
         public void AddRating(Rating rating){
             this.Ratings.Add(rating);
@@ -35,6 +35,7 @@ namespace Covert.Dragon.Domain.Catalog{
             this.Description = description;
             this.Brand = brand;
             this.Price = price;
+            this.Ratings = new List<Rating>();
         }
     }
 }
