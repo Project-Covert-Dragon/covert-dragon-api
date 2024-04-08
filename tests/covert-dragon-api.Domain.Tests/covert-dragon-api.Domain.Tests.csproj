@@ -21,4 +21,8 @@
     <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="../Covert.Dragon.Domain/Covert.Dragon.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
