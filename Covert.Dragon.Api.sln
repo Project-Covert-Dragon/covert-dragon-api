@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Covert.Dragon.Domain", "Cov
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Covert.Dragon.Api", "Covert.Dragon.Api\Covert.Dragon.Api.csproj", "{7251B12C-9FF9-43A5-8530-1065AAE8234D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E7E58790-D90F-45E8-A31D-D885B674C507}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "covert-dragon-api.Domain.Tests", "tests\covert-dragon-api.Domain.Tests\covert-dragon-api.Domain.Tests.csproj", "{3F3CAF22-A82F-41FC-9F31-479BA7B187DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,12 @@ Global
 		{7251B12C-9FF9-43A5-8530-1065AAE8234D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7251B12C-9FF9-43A5-8530-1065AAE8234D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7251B12C-9FF9-43A5-8530-1065AAE8234D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F3CAF22-A82F-41FC-9F31-479BA7B187DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F3CAF22-A82F-41FC-9F31-479BA7B187DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F3CAF22-A82F-41FC-9F31-479BA7B187DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F3CAF22-A82F-41FC-9F31-479BA7B187DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3F3CAF22-A82F-41FC-9F31-479BA7B187DA} = {E7E58790-D90F-45E8-A31D-D885B674C507}
 	EndGlobalSection
 EndGlobal
