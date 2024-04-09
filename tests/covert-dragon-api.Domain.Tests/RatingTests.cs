@@ -1,5 +1,5 @@
 namespace covert_dragon_api.Domain.Tests;
-using covert_dragon_api.Domain;
+using Covert.Dragon.Domain.Catalog;
 using NuGet.Frameworks;
 
 [TestClass]
@@ -11,7 +11,7 @@ public class RatingTests
         var rating = new Rating(1, "Mike", "Great fit!");
 
         Assert.AreEqual(1, rating.Stars);
-        Assert.AreEqual("Mike", rating.userName);
+        Assert.AreEqual("Mike", rating.UserName);
         Assert.AreEqual("Greate fit!", rating.Review);
     }
     [TestMethod]
@@ -41,6 +41,5 @@ public class RatingTests
         item.AddRating(rating);
 
         Assert.AreEqual(rating, item.Ratings[0]);
-
     }
 }
