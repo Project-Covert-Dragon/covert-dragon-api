@@ -12,7 +12,7 @@ public class RatingTests
 
         Assert.AreEqual(1, rating.Stars);
         Assert.AreEqual("Mike", rating.UserName);
-        Assert.AreEqual("Greate fit!", rating.Review);
+        Assert.AreEqual("Great fit!", rating.Review);
     }
     [TestMethod]
     [ExpectedException(typeof(ArgumentException))]
