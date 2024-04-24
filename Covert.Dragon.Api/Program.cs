@@ -1,3 +1,4 @@
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -26,3 +27,4 @@ app.Run();
 
 string storeConnectionString = builder.Configuration.GetConnectionString("StoreConnection") ??
     throw new ArgumentNullException("ConnectionString:StoreConnection");
+
