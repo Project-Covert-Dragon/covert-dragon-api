@@ -33,3 +33,8 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+string storeConnectionString = builder.Configuration.GetConnectionString("StoreConnection") ??
+    throw new ArgumentNullException("ConnectionString:StoreConnection");
+    
+builder.Services.AddDbContext<StoreContext>(options => options.UseSqlServer(storeConnectionString, b => b.MigrationsAssembly("Covert.Dragon.Api"))
+);
